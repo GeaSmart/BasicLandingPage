@@ -8,6 +8,8 @@ body{
 }
 .icono{
     animation: moverIzquierda 1s ease-in;
+    width: 100%;
+    height: 20px;    
 }
 .wrapper{
     height: 100vh;
@@ -25,14 +27,23 @@ nav{
     top: 20px;
     left: 20px;
     display: flex;
-    justify-content: flex-start;
+    justify-content: flex-start;    
 }
+
 nav a{    
     color: #333;
     text-decoration: none;
     /* display: inline-block;
     animation: moverIzquierda 1s ease-in; */
     z-index: 100;
+}
+
+nav a span{
+    background-color: gray;
+    width: 50px;
+    height: 8px;
+    display: block;
+    margin-top: 6px;
 }
 
 .container{
@@ -42,6 +53,7 @@ nav a{
     align-items: center;
     margin: auto;          
     justify-content: space-around;
+    margin-top: 10px;;
 }
 img{
     /* border: 1px solid black; */
@@ -150,22 +162,27 @@ img{
         transform: translate(0);
     }
 }
-
-@media screen and (max-width:1000px){
+@media screen and (max-width:1200px){
     img{
-        height: 400px;
+        height: 350px;
+    }
+    .textos h1{
+        font-size: 60px;
+    }
+    .textos h2{
+        font-size: 25px;
     }
 }
 
 @media screen and (max-width:800px){
     img{
-        height: 350px;
+        height: 300px;
     }
     .textos h1{
-        font-size: 70px;
+        font-size: 60px;
     }
     .textos h2{
-        font-size: 25px;
+        font-size: 20px;
     }
 }
 
@@ -174,10 +191,10 @@ img{
         height: 200px;
     }
     .textos h1{
-        font-size: 35px;
+        font-size: 40px;
     }
     .textos h2{
-        font-size: 15px;
+        font-size: 20px;
     }
 }
 
@@ -195,7 +212,7 @@ img{
         font-size: 60px;
     }
     .textos h2{
-        font-size: 25px;
+        font-size: 20px;
     }
 }
 
