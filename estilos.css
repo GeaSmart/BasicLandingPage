@@ -1,3 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
 body{
-    
+    font-family: 'Open Sans', sans-serif;    
+}
+header{
+    background: #a8ff78;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #78ffd6, #a8ff78);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #78ffd6, #a8ff78); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: auto;
+    padding: 48px;
+    width: 100%;
+}
+nav{
+    position: fixed;
+    top: 20px;
+    left: 20px;
+}
+nav a{    
+    color: #333;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.container{
+    width: 95%;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    margin: auto;          
+    justify-content: space-around;
+}
+img{
+    /* border: 1px solid black; */
+    display: block;
+    height: 550px;
+    object-fit: cover;
+    width: auto;    
+}
+.textos{
+    width: 50%;
+    color: #333;
+}
+.textos h1{
+    font-size: 80px;
+}
+.textos h2{
+    font-size: 30px;
+}
+.textos a{
+    display: inline-block;
+    color: #333;
+    text-decoration: none;
+    font-weight: 300;
+    margin-top: 30px;
+    border: 1px solid #222;
+    width: 150px;border-radius: 3px;
+    text-align: center;
+    padding: 10px 0;
+}
+.wave{
+    height: 100px;
+    width: 100%;
+    background: -webkit-linear-gradient(to right, #78ffd6, #a8ff78);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #78ffd6, #a8ff78); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ 
 }
