@@ -264,9 +264,11 @@ img{
       height: 350px;
   }
   
-  .price {
+  .card .tag {
     color: grey;
-    font-size: 20px;
+    font-size: 14px;
+    margin-bottom: 10px;
+    text-align: center;
   }
   
   .card button {
@@ -278,7 +280,11 @@ img{
     text-align: center;
     cursor: pointer;
     width: 100%;
-    font-size: 18px;
+    font-size: 18px;    
+  }
+
+  .card p{
+      text-align: justify;
   }
   
   .card button:hover {
