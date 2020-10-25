@@ -6,6 +6,9 @@
 body{
     font-family: 'Open Sans', sans-serif;    
 }
+.icono{
+    animation: moverIzquierda 1s ease-in;
+}
 header{
     background: #a8ff78;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #78ffd6, #a8ff78);  /* Chrome 10-25, Safari 5.1-6 */
@@ -58,13 +61,14 @@ img{
     display: inline-block;
     color: #333;
     text-decoration: none;
-    font-weight: 300;
+    font-weight: 500;
     margin-top: 30px;
-    border: 1px solid #222;
+    border: 1px solid #fff;
     width: 150px;border-radius: 3px;
     text-align: center;
     padding: 10px 0;
     animation: arriba 1s ease-in;
+    background-color: rgba(255, 255, 255, 0.637);
 }
 .wave{
     height: 100px;
@@ -72,6 +76,36 @@ img{
     background: -webkit-linear-gradient(to right, #78ffd6, #a8ff78);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #78ffd6, #a8ff78); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
  
+}
+.enlaces{
+    position: fixed;
+    display: flex;
+    top: 0;
+    background-color: black;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    transition: all 1s ease;
+
+    background: #00F260;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0575E6, #00F260);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0575E6, #00F260); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.enlaces a{
+    color: #fff;
+}
+.uno{
+    -webkit-clip-path: circle(0% at 0.0);
+    clip-path: circle(0% at 0 0);
+}
+
+.dos{
+    -webkit-clip-path: circle(150% at 0.0);
+    clip-path: circle(150% at 0 0);
 }
 
 @keyframes moverIzquierda{
