@@ -21,12 +21,15 @@ nav{
     position: fixed;
     top: 20px;
     left: 20px;
+    display: flex;
+    justify-content: flex-start;
 }
 nav a{    
     color: #333;
     text-decoration: none;
-    display: inline-block;
-    animation: moverIzquierda 1s ease-in;
+    /* display: inline-block;
+    animation: moverIzquierda 1s ease-in; */
+    z-index: 100;
 }
 
 .container{
@@ -56,6 +59,7 @@ img{
 .textos h2{
     font-size: 30px;
     animation: moverIzquierda 1s ease-in;
+    color: rgb(83, 83, 83);
 }
 .textos a{
     display: inline-block;
@@ -89,6 +93,8 @@ img{
     flex-direction: column;
     width: 100%;
     transition: all 1s ease;
+
+    font-size: 40px;
 
     background: #00F260;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #0575E6, #00F260);  /* Chrome 10-25, Safari 5.1-6 */
@@ -138,5 +144,68 @@ img{
     100%{
         opacity: 1;
         transform: translate(0);
+    }
+}
+
+@media screen and (max-width:1000px){
+    img{
+        height: 400px;
+    }
+}
+
+@media screen and (max-width:800px){
+    img{
+        height: 350px;
+    }
+    .textos h1{
+        font-size: 70px;
+    }
+    .textos h2{
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width:700px){
+    img{
+        height: 200px;
+    }
+    .textos h1{
+        font-size: 35px;
+    }
+    .textos h2{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:450px){
+    .container{
+        width: 100%;
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+    }
+    .textos{
+        width: 100%;
+        text-align: center;
+    }
+    .textos h1{
+        font-size: 60px;
+    }
+    .textos h2{
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width:340px){
+    img{
+        width: 160px;
+    }
+    .textos a{
+        width: 120px;        
+    }
+    .textos h1{
+        font-size: 35px;
+    }
+    .textos h2{
+        font-size: 15px;
     }
 }
