@@ -23,6 +23,7 @@ nav a{
     color: #333;
     text-decoration: none;
     display: inline-block;
+    animation: moverIzquierda 1s ease-in;
 }
 
 .container{
@@ -39,6 +40,7 @@ img{
     height: 550px;
     object-fit: cover;
     width: auto;    
+    animation: arriba 1s ease-in;
 }
 .textos{
     width: 50%;
@@ -46,9 +48,11 @@ img{
 }
 .textos h1{
     font-size: 80px;
+    animation: moverDerecha 1s ease-in;
 }
 .textos h2{
     font-size: 30px;
+    animation: moverIzquierda 1s ease-in;
 }
 .textos a{
     display: inline-block;
@@ -60,6 +64,7 @@ img{
     width: 150px;border-radius: 3px;
     text-align: center;
     padding: 10px 0;
+    animation: arriba 1s ease-in;
 }
 .wave{
     height: 100px;
@@ -67,4 +72,37 @@ img{
     background: -webkit-linear-gradient(to right, #78ffd6, #a8ff78);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #78ffd6, #a8ff78); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
  
+}
+
+@keyframes moverIzquierda{
+    0%{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moverDerecha{
+    0%{
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes arriba{
+    0%{
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
 }
